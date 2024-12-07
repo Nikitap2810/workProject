@@ -7,6 +7,8 @@ import UserCalendarEventsScreen from '../screen/AuthScreen/UserCalendarEventsScr
 import LoginScreen from '../screen/AuthScreen/LoginScreen';
 import OtpScreen from '../screen/AuthScreen/OtpScreen';
 import NewHomeScreen from '../screen/AuthScreen/NewHomeScreen';
+import ListScreen from '../screen/TaskScreen/ListScreen';
+import DetailScreen from '../screen/TaskScreen/DetailScreen';
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -22,6 +24,8 @@ const StackNavigation = () => {
         name="UserCalendarEvents"
         component={UserCalendarEventsScreen}
       />
+      <Stack.Screen name="List" component={ListScreen} />
+      <Stack.Screen name="Detail" component={DetailScreen} />
     </Stack.Navigator>
   );
 };

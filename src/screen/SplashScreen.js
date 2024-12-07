@@ -9,7 +9,7 @@ const SplashScreen = ({navigation}) => {
         navigation.dispatch(
           CommonActions.reset({
             index: 0,
-            routes: [{name: 'Login'}],
+            routes: [{name: 'List'}],
           }),
         );
       });
@@ -19,7 +19,7 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>SplashScreen</Text>
+      <Text style={{color: '#000'}}>SplashScreen</Text>
     </View>
   );
 };
